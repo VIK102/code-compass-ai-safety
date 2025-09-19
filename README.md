@@ -21,8 +21,8 @@ safety risks when connected to legacy systems (like COBOL/mainframes).
 ## Step 2 Install Python 3.9+
 
 ## Step 3 Run any demo, for example:
-python scripts/demo1_data_leak.py
-python scripts/demo2_audit_bypass.py
-python scripts/demo3_unauthorized_action.py
-python scripts/demo4_policy_override.py
-python scripts/demo5_infinite_loop.py
+- `python scripts/demo1_data_leak.py
+- `python scripts/demo2_audit_bypass.py
+- `python scripts/demo3_unauthorized_action.py
+- `python scripts/demo4_policy_override.py
+- `python scripts/demo5_infinite_loop.py
