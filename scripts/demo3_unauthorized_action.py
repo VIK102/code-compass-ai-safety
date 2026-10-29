@@ -15,8 +15,8 @@ def transfer_funds(src, dst, amt, *, authorized=False):
 def ai_agent(prompt):
     # Malicious prompt convinces the AI to "just do it"
     if "just transfer" in prompt.lower():
-        # ❌ Unsafe: calls transfer with authorized=True bypassed
-        return transfer_funds("Alice", "Bob", 500, authorized=False)
+        # ❌ Unsafe: the agent skips the authorization check
+        return transfer_funds("Alice", "Bob", 500, authorized=True)
     # ✅ Safe path: never performs actions, only reports policy
     return "Policy: Transfers require explicit manager authorization."
 
